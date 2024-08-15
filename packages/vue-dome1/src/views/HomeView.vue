@@ -1,9 +1,15 @@
 <script setup>
 import { isObject, isFunction } from '@libc/shared'
+import _ from "lodash"
 </script>
 
 <template>
   <main class="main-wrapper">
+    <section>
+      <h1>lodash公共依赖的使用</h1>
+      <p>向上一级展平数组嵌套：_.flatten([1, [2, [3, [4]], 5]])</p>
+      <p>返回值：{{ _.flatten([1, [2, [3, [4]], 5]]) }}</p>
+    </section>
     <section>
       <h1>libc-shared公共方法的使用</h1>
       <p>libc-shared中判断是否是对象的方法</p>
@@ -20,8 +26,8 @@ import { isObject, isFunction } from '@libc/shared'
 <style lang="less" scoped>
 .main-wrapper{
   section{
-    padding: 4px 10px;
-    min-height: 150px;
+    padding: 8px 12px;
+    min-height: 160px;
     border: 2px solid #de5e60;
     border-radius: 4px;
     >h1{
@@ -30,7 +36,7 @@ import { isObject, isFunction } from '@libc/shared'
       color: #00BD7E;
       margin-bottom: 4px;
     }
-    &:first-child{
+    &{
       margin-bottom: 12px;
     }
     p:nth-child(3){

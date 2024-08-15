@@ -12,6 +12,7 @@
   "dependencies": {
     "@libc/shared": "workspace:^",
     "less": "^2.7.3",
+    "lodash": "^4.17.21",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
