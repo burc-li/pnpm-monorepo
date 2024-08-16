@@ -6,6 +6,7 @@
  * Released under the MIT license
  *
  */
+import "./styles/index.less";
 export * from './components';
 import * as components from './components';
 import localeFile from './locale/index';
