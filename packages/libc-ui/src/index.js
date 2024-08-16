@@ -152,25 +152,12 @@ export const install = function(app, opts = {}) {
 
 export const version = pkg.version;
 
-export const locale = localeFile.use;
-
-export const i18n = localeFile.i18n;
-
-export const lang = (code) => {
-    const langObject = window['viewuiplus/locale'].default;
-    if (code === langObject.i.locale) localeFile.use(langObject);
-    else console.log(`The ${code} language pack is not loaded.`); // eslint-disable-line no-console
-};
-
+// 最终导出的产物
 const API = {
     version,
-    locale,
-    i18n,
     install,
-    lang,
-    // Circle,
-    // Switch,
     ...components
 };
 
+console.log('API',API)
 export default API;

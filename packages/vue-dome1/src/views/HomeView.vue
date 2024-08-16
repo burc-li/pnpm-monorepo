@@ -1,5 +1,6 @@
 <script setup>
 import { isObject, isFunction } from '@libc/shared'
+import { Button, Spin } from '@libc/ui'
 import _ from "lodash"
 </script>
 
@@ -19,6 +20,8 @@ import _ from "lodash"
     </section>
     <section>
       <h1>libc-ui公共组件库的使用</h1>
+      <Button type="primary">Primary</Button>
+      <Spin></Spin>
     </section>
   </main>
 </template>
@@ -41,6 +44,9 @@ import _ from "lodash"
     }
     p:nth-child(3){
       margin-bottom: 6px;
+    }
+    :deep(.ivu-spin-main) {
+      margin-top: 12px;
     }
   }
 }
