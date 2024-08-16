@@ -20,6 +20,7 @@ import _ from "lodash"
     </section>
     <section>
       <h1>libc-ui公共组件库的使用</h1>
+      <Button type="primary" ghost>Primary</Button>
       <Button type="primary">Primary</Button>
       <Spin></Spin>
     </section>
@@ -47,6 +48,9 @@ import _ from "lodash"
     }
     :deep(.ivu-spin-main) {
       margin-top: 12px;
+    }
+    :deep(.ivu-btn) {
+      margin-right: 12px;
     }
   }
 }
